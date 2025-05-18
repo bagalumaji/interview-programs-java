@@ -2,7 +2,7 @@ package general;
 
 public class NumberPalindrome {
     public static void main(String[] args) {
-        System.out.println(isPalindrome(-101));
+        System.out.println(isPalindrome(101));
     }
     static boolean isPalindrome(int x){
         int rev=0;
@@ -16,7 +16,6 @@ public class NumberPalindrome {
             rev = rev*10+d;
         }
 
-        if (rev == y) return true;
-        else return false;
+        return rev == y;
     }
 }
