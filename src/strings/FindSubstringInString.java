@@ -1,3 +1,5 @@
+package strings;
+
 class FindSubstringInString {
     public static String findSubstringInString(String []str) {
             String mainSTring = str[0];
