@@ -12,7 +12,7 @@ public class NumberOfSubstringsWithOnly1s {
 
     public static int getSubStringCount(String str) {
 
-        List<String> stringList = Arrays.stream(str.split("0")).filter(e -> !(e.isBlank() || e.isEmpty())).collect(Collectors.toList());
+        List<String> stringList = Arrays.stream(str.split("0")).filter(e -> !e.isBlank()).collect(Collectors.toList());
         int finalSum = 0;
         System.out.println("stringList = " + stringList);
         int sum = 0;
