@@ -2,7 +2,8 @@ package strings;
 
 public class CountConsecutiveCharacters {
     public static void main(String[] args) {
-        System.out.println(getCountConsecutiveCharacters("yyyttyyyiio"));
+        String str="yyyttyyyiio";
+        System.out.println(getCountConsecutiveCharacters(str));
     }
     static String getCountConsecutiveCharacters(String str){
         int cnt=1;
