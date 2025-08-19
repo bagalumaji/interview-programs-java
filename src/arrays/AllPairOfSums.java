@@ -9,10 +9,10 @@ public class AllPairOfSums {
     }
     static Map<Integer,Integer> allPairsOfSums(int[]arr, int target){
         Map<Integer,Integer> map = new HashMap<>();
-        for (int i = 0; i < arr.length; i++) {
-            int val = target - arr[i];
-            if(!map.containsKey(val) && !map.containsValue(val)){
-                map.put(arr[i],val);
+        for (int val : arr) {
+            int diff = target - val;
+            if (!map.containsKey(diff) && !map.containsValue(diff)) {
+                map.put(val, diff);
             }
         }
         return map;
